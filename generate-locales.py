@@ -116,7 +116,7 @@ def switcher(active: str) -> str:
   </details>
 </div>
 <style>
-.demo-language-switcher{{position:absolute;top:65px;left:175px;z-index:99999;color:#fff;font-family:Arial,sans-serif}}
+.demo-language-switcher{{position:absolute;top:5px;left:24px;z-index:99999;color:#fff;font-family:Arial,sans-serif}}
 .demo-language-switcher details{{position:relative}}
 .demo-language-switcher summary{{display:flex;align-items:center;gap:8px;min-width:52px;padding:6px 9px;cursor:pointer;list-style:none;font-size:12px;font-weight:700;letter-spacing:.08em;transition:color .2s ease}}
 .demo-language-switcher summary::-webkit-details-marker{{display:none}}
