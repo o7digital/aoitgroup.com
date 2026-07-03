@@ -150,6 +150,8 @@ for code, config in LANGUAGES.items():
     for original, translated in config["translations"].items():
         html = html.replace(original, translated)
     html = html.replace("</body>", switcher(code) + "\n</body>", 1)
+    if '<script src="/olivia-ai.js" defer></script>' not in html:
+        html = html.replace("</body>", '<script src="/olivia-ai.js" defer></script>\n</body>', 1)
     output = ROOT / code / "index.html"
     output.parent.mkdir(exist_ok=True)
     output.write_text(html, encoding="utf-8")
