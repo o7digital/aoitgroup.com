@@ -14,6 +14,23 @@ ROOT = Path(__file__).parent
 LANGS = {"en": "English", "fr": "Français", "es": "Español", "de": "Deutsch", "it": "Italiano"}
 SKIP_DIRS = set(LANGS) | {"application", "concrete", "packages", ".git", ".vercel"}
 BASE = "https://aoitgroup.vercel.app"
+PATH_ALIASES = {
+    "/cyber-security/cyber-assurance/managed-detection-response": "/cyber-security/cyber-consultancy/managed-detection-response",
+    "/cyber-security/cyber-essentials": "/cyber-security/cyber-assurance/cyber-essentials",
+    "/cyber-security/cyber-security-awareness-training": "/cyber-security/cyber-assurance/cyber-security-awareness-training",
+    "/cyber-security/iot-device-security-assessments": "/cyber-security/cyber-assurance/iot-device-security-assessments",
+    "/cyber-security/managed-detection-response": "/cyber-security/cyber-consultancy/managed-detection-response",
+    "/cyber-security/penetration-testing": "/cyber-security/cyber-assurance/penetration-testing",
+    "/cyber-security/physical-penetration-testing": "/cyber-security/cyber-assurance/physical-penetration-testing",
+    "/cyber-security/red-teaming": "/cyber-security/cyber-assurance/red-teaming",
+    "/cyber-security/social-engineering": "/cyber-security/cyber-assurance/social-engineering",
+    "/cyber-security/vulnerability-assessments": "/cyber-security/cyber-assurance/vulnerability-assessments",
+    "/data-privacy": "/privacy-policy",
+    "/jobs": "/about-a-and-o/jobs",
+    "/it-services/managed-services/packaged-services": "/it-services",
+    "/knowledge-hub/business-continuity-disruption-home-working": "/knowledge-hub",
+    "/newsroom/press-releases/2021-11-10-gartner-says-cloud-will-be-the-centerpiece-of-new-digital-experiences": "/knowledge-hub",
+}
 CACHE_FILE = ROOT / f".translation-cache-{(sys.argv[1] if len(sys.argv) > 1 else 'all')}.json"
 CACHE = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
 
@@ -80,10 +97,25 @@ def add_seo(soup, lang, rel):
 def localize_links(soup, lang):
     for anchor in soup.select("a[href]"):
         href = anchor.get("href", "")
+        query = ""
         if href.startswith("https://www.aoitgroup.com") or href.startswith("https://aoitgroup.com"):
             href = urllib.parse.urlsplit(href).path or "/"
+        for code in LANGS:
+            if href.startswith(f"/{code}/"):
+                href = href[len(code) + 1:]
+                break
+        if href.startswith("/"):
+            parts = urllib.parse.urlsplit(href)
+            href, query = parts.path, parts.query
+        if href in {"/connect/login", "/sso_login", "/index.php"}:
+            anchor["href"] = f"https://www.aoitgroup.com{href}"
+            continue
+        suffix = "/" if href.endswith("/") and href != "/" else ""
+        href = PATH_ALIASES.get(href.rstrip("/") or "/", href)
         if href.startswith("/") and not href.startswith(("/application/", "/concrete/", "/packages/", "/en/", "/fr/", "/es/", "/de/", "/it/")):
             href = f"/{lang}" + href
+        if query:
+            href += "?" + query
         anchor["href"] = href
 
 
@@ -135,3 +167,7 @@ for lang in targets:
         target.write_text(str(soup), encoding="utf-8")
         if page_no % 25 == 0: print(f"{lang}: {page_no}/{len(pages)}")
 print("Translation complete")
+
+# The public root is the English localized homepage.
+if not sys.argv[1:] or "en" in targets:
+    (ROOT / "index.html").write_text((ROOT / "en" / "index.html").read_text(encoding="utf-8"), encoding="utf-8")
