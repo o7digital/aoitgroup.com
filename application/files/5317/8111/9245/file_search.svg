@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/file_search</title>
+  <g id="icon_line/file_search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25.6666667,5.5 L25.6666667,12.8333333 C25.6666667,13.8458554 26.487478,14.6666667 27.5,14.6666667 L34.8333333,14.6666667" id="Path" stroke="#008EE9" stroke-width="2"></path>
+    <path d="M22,38.5 L12.8333333,38.5 C10.8082893,38.5 9.16666667,36.8583774 9.16666667,34.8333333 L9.16666667,9.16666667 C9.16666667,7.14162258 10.8082893,5.5 12.8333333,5.5 L25.6666667,5.5 L34.8333333,14.6666667 L34.8333333,22.9166667" id="Path" stroke="#008EE9" stroke-width="2"></path>
+    <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="30.25" cy="32.0833333" r="4.58333333"></circle>
+    <line x1="33.9166667" y1="35.75" x2="38.5" y2="40.3333333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+  </g>
+</svg>

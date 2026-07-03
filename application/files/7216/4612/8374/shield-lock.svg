@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_line/shield-lock</title>
+    <g id="icon_line/shield-lock" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+            <path d="M22,5.5 C26.2823568,9.2887215 31.8715319,11.2613716 37.5833333,11 C39.2634821,16.715472 38.5539362,22.8679801 35.6169084,28.0509703 C32.6798806,33.2339606 27.7664864,37.0042879 22,38.5 C16.2335136,37.0042879 11.3201194,33.2339606 8.38309155,28.0509703 C5.44606375,22.8679801 4.73651791,16.715472 6.41666667,11 C12.1284681,11.2613716 17.7176432,9.2887215 22,5.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="22" cy="20.1666667" r="1.83333333"></circle>
+            <line x1="22" y1="22" x2="22" y2="26.5833333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

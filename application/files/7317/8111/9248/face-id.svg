@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/face-id</title>
+  <g id="icon_line/face-id" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <path d="M7.33333333,14.6666667 L7.33333333,11 C7.33333333,8.97495592 8.97495592,7.33333333 11,7.33333333 L14.6666667,7.33333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M7.33333333,29.3333333 L7.33333333,33 C7.33333333,35.0250441 8.97495592,36.6666667 11,36.6666667 L14.6666667,36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M29.3333333,7.33333333 L33,7.33333333 C35.0250441,7.33333333 36.6666667,8.97495592 36.6666667,11 L36.6666667,14.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M29.3333333,36.6666667 L33,36.6666667 C35.0250441,36.6666667 36.6666667,35.0250441 36.6666667,33 L36.6666667,29.3333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <line x1="16.5" y1="18.3333333" x2="16.5183333" y2="18.3333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="27.5" y1="18.3333333" x2="27.5183333" y2="18.3333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <path d="M17.4166667,27.5 C18.6235708,28.7317914 20.2754921,29.4259355 22,29.4259355 C23.7245079,29.4259355 25.3764292,28.7317914 26.5833333,27.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+  </g>
+</svg>

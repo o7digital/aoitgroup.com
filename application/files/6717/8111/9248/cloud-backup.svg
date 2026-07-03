@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/cloud-backup</title>
+  <g id="icon_line/cloud-backup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <path d="M12.8333333,33 C8.06987737,33 4.20833333,29.3063492 4.20833333,24.75 C4.20833333,20.1936508 8.06987737,16.5 12.8333333,16.5 C13.5610966,13.2578148 16.15545,10.6113434 19.6391258,9.55748613 C23.1228016,8.50362882 26.9665466,9.20249154 29.7224592,11.3908195 C32.4783717,13.5791474 33.7277632,16.9244814 33,20.1666667 L34.8333333,20.1666667 C38.3771604,20.1666667 41.2499999,23.0395062 41.2499999,26.5833333 C41.2499999,30.1271604 38.3771604,33 34.8333333,33 L33,33" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="16.5 27.5 22 22 27.5 27.5"></polyline>
+      <line x1="22" y1="22" x2="22" y2="38.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+    </g>
+  </g>
+</svg>

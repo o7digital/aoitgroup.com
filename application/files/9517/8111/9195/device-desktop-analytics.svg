@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/device-desktop-analytics</title>
+  <g id="icon_line/device-desktop-analytics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <rect id="Rectangle" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5.5" y="7.33333333" width="33" height="22" rx="1.83333333"></rect>
+      <line x1="12.8333333" y1="36.6666667" x2="31.1666667" y2="36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="16.5" y1="29.3333333" x2="16.5" y2="36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="27.5" y1="29.3333333" x2="27.5" y2="36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <g id="Group-2" transform="translate(21.583333, 18.666667) scale(-1, 1) translate(-21.583333, -18.666667) translate(14.583333, 14.666667)" stroke="#008EE9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <line x1="0.916666667" y1="7.33333333" x2="0.916666667" y2="2.84217094e-14" id="Path"></line>
+        <line x1="7.08333333" y1="7.33333333" x2="7.08333333" y2="3.66666667" id="Path"></line>
+        <line x1="12.5833333" y1="7.33333333" x2="12.5833333" y2="5.5" id="Path"></line>
+      </g>
+    </g>
+  </g>
+</svg>

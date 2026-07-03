@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/router</title>
+  <g id="icon_line/router" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <rect id="Rectangle" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5.5" y="23.8333333" width="33" height="14.6666667" rx="3.66666667"></rect>
+      <line x1="31.1666667" y1="31.1666667" x2="31.1666667" y2="31.185" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="23.8333333" y1="31.1666667" x2="23.8333333" y2="31.185" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="27.5" y1="23.8333333" x2="27.5" y2="20.1666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <path d="M21.5416667,16.0416667 C22.919102,14.1218713 25.1371749,12.9833821 27.5,12.9833821 C29.8628251,12.9833821 32.080898,14.1218713 33.4583333,16.0416667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M15.5833333,11.9166667 C18.338204,8.07707584 22.7743497,5.80009747 27.5,5.80009747 C32.2256503,5.80009747 36.661796,8.07707584 39.4166667,11.9166667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+  </g>
+</svg>

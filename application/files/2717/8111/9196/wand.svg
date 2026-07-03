@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/wand</title>
+  <g id="icon_line/wand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="11 38.5 38.5 11 33 5.5 5.5 33 11 38.5"></polyline>
+      <line x1="27.5" y1="11" x2="33" y2="16.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <path d="M16.5,5.5 C16.5,7.52504408 18.1416226,9.16666667 20.1666667,9.16666667 C18.1416226,9.16666667 16.5,10.8082893 16.5,12.8333333 C16.5,10.8082893 14.8583774,9.16666667 12.8333333,9.16666667 C14.8583774,9.16666667 16.5,7.52504408 16.5,5.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M34.8333333,23.8333333 C34.8333333,25.8583774 36.4749559,27.5 38.5,27.5 C36.4749559,27.5 34.8333333,29.1416226 34.8333333,31.1666667 C34.8333333,29.1416226 33.1917107,27.5 31.1666667,27.5 C33.1917107,27.5 34.8333333,25.8583774 34.8333333,23.8333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+  </g>
+</svg>

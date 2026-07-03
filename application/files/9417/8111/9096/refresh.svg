@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/refresh</title>
+  <g id="icon_line/refresh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M36.6666667,20.1666667 C35.7450063,13.5346518 30.4990937,8.33971044 23.8583962,7.48284625 C17.2176987,6.62598206 10.8249322,10.3191583 8.25,16.5 M7.33333333,9.16666667 L7.33333333,16.5 L14.6666667,16.5" id="Shape" stroke="#008EE9" stroke-width="2"></path>
+    <path d="M7.33333333,23.8333333 C8.2549937,30.4653482 13.5009063,35.6602896 20.1416038,36.5171537 C26.7823013,37.3740179 33.1750678,33.6808417 35.75,27.5 M36.6666667,34.8333333 L36.6666667,27.5 L29.3333333,27.5" id="Shape" stroke="#008EE9" stroke-width="2"></path>
+  </g>
+</svg>

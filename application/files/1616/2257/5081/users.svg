@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_line/users</title>
+    <g id="icon_line/users" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+        <circle id="Oval" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="16.5" cy="12.8333333" r="7.33333333"></circle>
+        <path d="M5.5,38.5 L5.5,34.8333333 C5.5,30.7832452 8.78324517,27.5 12.8333333,27.5 L20.1666667,27.5 C24.2167548,27.5 27.5,30.7832452 27.5,34.8333333 L27.5,38.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M29.3333333,5.73833333 C32.5781772,6.56914461 34.8477126,9.49298377 34.8477126,12.8425 C34.8477126,16.1920162 32.5781772,19.1158554 29.3333333,19.9466667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M38.5,38.5 L38.5,34.8333333 C38.4808617,31.5050466 36.2226673,28.6070304 33,27.775" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+</svg>

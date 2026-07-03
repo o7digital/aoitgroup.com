@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/heart</title>
+  <g id="icon_line/heart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35.75,24.882 L22,38.5 L8.25,24.882 M8.25,24.882 C5.77737961,22.4758993 4.86517086,18.8852406 5.88954688,15.5907261 C6.9139229,12.2962115 9.70136447,9.85589935 13.1023972,9.27611604 C16.50343,8.69633274 19.9419524,10.0752879 22,12.8443333 C24.0666721,10.0957746 27.4978476,8.73512442 30.886541,9.32033003 C34.2752344,9.90553565 37.0513386,12.3381432 38.0764862,15.6206394 C39.1016338,18.9031355 38.203356,22.4832795 35.75,24.893" id="Shape" stroke="#008EE9" stroke-width="2"></path>
+  </g>
+</svg>

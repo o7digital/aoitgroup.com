@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/calendar-time</title>
+  <g id="icon_line/calendar-time" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <path d="M21.6241667,38.5 L9.16666667,38.5 C7.14162258,38.5 5.5,36.8583774 5.5,34.8333333 L5.5,12.8333333 C5.5,10.8082893 7.14162258,9.16666667 9.16666667,9.16666667 L31.1666667,9.16666667 C33.1917107,9.16666667 34.8333333,10.8082893 34.8333333,12.8333333 L34.8333333,20.1666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <circle id="Oval" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="33" cy="33" r="7.33333333"></circle>
+      <line x1="27.5" y1="5.5" x2="27.5" y2="12.8333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="12.8333333" y1="5.5" x2="12.8333333" y2="12.8333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="5.5" y1="20.1666667" x2="34.8333333" y2="20.1666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="33 30.2426667 33 33 34.8333333 34.8333333"></polyline>
+    </g>
+  </g>
+</svg>

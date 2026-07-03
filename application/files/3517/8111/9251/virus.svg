@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/virus</title>
+  <g id="icon_line/virus" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <circle id="Oval" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="22" cy="22" r="9.16666667"></circle>
+      <path d="M22,12.8333333 L22,5.5 M20.1666667,5.5 L23.8333333,5.5" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M31.3986276,16.7263724 L31.3986276,9.39303903 M29.5652943,9.39303903 L33.231961,9.39303903" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(31.398628, 12.601372) rotate(45.000000) translate(-31.398628, -12.601372) "></path>
+      <path d="M35.2916667,26.125 L35.2916667,18.7916667 M33.4583333,18.7916667 L37.125,18.7916667" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(35.291667, 22.000000) rotate(90.000000) translate(-35.291667, -22.000000) "></path>
+      <path d="M31.3986276,35.5236276 L31.3986276,28.1902943 M29.5652943,28.1902943 L33.231961,28.1902943" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(31.398628, 31.398628) rotate(135.000000) translate(-31.398628, -31.398628) "></path>
+      <path d="M22,39.4166667 L22,32.0833333 M20.1666667,32.0833333 L23.8333333,32.0833333" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(22.000000, 35.291667) rotate(180.000000) translate(-22.000000, -35.291667) "></path>
+      <path d="M12.6013724,35.5236276 L12.6013724,28.1902943 M10.768039,28.1902943 L14.4347057,28.1902943" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.601372, 31.398628) rotate(-135.000000) translate(-12.601372, -31.398628) "></path>
+      <path d="M8.70833333,26.125 L8.70833333,18.7916667 M6.875,18.7916667 L10.5416667,18.7916667" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(8.708333, 22.000000) rotate(-90.000000) translate(-8.708333, -22.000000) "></path>
+      <path d="M12.6013724,16.7263724 L12.6013724,9.39303903 M10.768039,9.39303903 L14.4347057,9.39303903" id="Shape" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.601372, 12.601372) rotate(-45.000000) translate(-12.601372, -12.601372) "></path>
+    </g>
+  </g>
+</svg>

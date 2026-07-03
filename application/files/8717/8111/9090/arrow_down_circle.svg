@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/arrow_down_circle</title>
+  <g id="icon_line/arrow_down_circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="22" cy="22" r="16.5"></circle>
+    <line x1="14.6666667" y1="22" x2="22" y2="29.3333333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    <line x1="22" y1="14.6666667" x2="22" y2="29.3333333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    <line x1="29.3333333" y1="22" x2="22" y2="29.3333333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+  </g>
+</svg>

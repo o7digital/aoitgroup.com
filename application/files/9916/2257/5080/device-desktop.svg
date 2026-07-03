@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_line/device-desktop</title>
+    <g id="icon_line/device-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+            <rect id="Rectangle" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="5.5" y="7.33333333" width="33" height="22" rx="1.83333333"></rect>
+            <line x1="12.8333333" y1="36.6666667" x2="31.1666667" y2="36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="16.5" y1="29.3333333" x2="16.5" y2="36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="27.5" y1="29.3333333" x2="27.5" y2="36.6666667" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

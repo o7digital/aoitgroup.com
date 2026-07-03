@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/alarm</title>
+  <g id="icon_line/alarm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="22" cy="23.8333333" r="12.8333333"></circle>
+    <polyline id="Path" stroke="#008EE9" stroke-width="2" points="22 18.3333333 22 23.8333333 25.6666667 23.8333333"></polyline>
+    <line x1="12.8333333" y1="7.33333333" x2="7.79166667" y2="11" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    <line x1="31.1666667" y1="7.33333333" x2="36.2083333" y2="11" id="Path" stroke="#008EE9" stroke-width="2"></line>
+  </g>
+</svg>

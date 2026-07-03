@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_line/list-check</title>
+    <g id="icon_line/list-check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+            <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6.41666667 10.0833333 9.16666667 12.8333333 13.75 8.25"></polyline>
+            <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6.41666667 21.0833333 9.16666667 23.8333333 13.75 19.25"></polyline>
+            <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="6.41666667 32.0833333 9.16666667 34.8333333 13.75 30.25"></polyline>
+            <line x1="20.1666667" y1="11" x2="36.6666667" y2="11" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="20.1666667" y1="22" x2="36.6666667" y2="22" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            <line x1="20.1666667" y1="33" x2="36.6666667" y2="33" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+        </g>
+    </g>
+</svg>

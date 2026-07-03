@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/map_pin</title>
+  <g id="icon_line/map_pin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="22" cy="20.1666667" r="5.5"></circle>
+    <path d="M32.3711667,30.5378333 L24.5923333,38.3166667 C23.1607107,39.7468457 20.8411226,39.7468457 19.4095,38.3166667 L11.6288333,30.5378333 C5.90136087,24.8100657 5.90152038,15.5237834 11.6291896,9.79621256 C17.3568588,4.06864171 26.6431412,4.06864171 32.3708104,9.79621256 C38.0984796,15.5237834 38.0986391,24.8100657 32.3711667,30.5378333 L32.3711667,30.5378333 Z" id="Path" stroke="#008EE9" stroke-width="2"></path>
+  </g>
+</svg>

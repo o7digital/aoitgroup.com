@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/fingerprint</title>
+  <g id="icon_line/fingerprint" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <path d="M34.65,12.8333333 C36.3081646,15.5855003 37.0166819,18.8060335 36.6666667,22 L36.6666667,23.8333333 C36.6645216,25.7635959 37.1703465,27.6604392 38.1333333,29.3333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M14.6666667,20.1666667 C14.6666667,16.1165785 17.9499118,12.8333333 22,12.8333333 C26.0500882,12.8333333 29.3333333,16.1165785 29.3333333,20.1666667 L29.3333333,22 C29.3333333,25.9667872 30.6199277,29.8265702 33,33" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M21.999984,20.1666667 L21.999984,23.8333333 C21.9941483,29.0755621 23.5936239,34.1938841 26.5833333,38.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M14.6666667,27.5 C15.1152891,31.3313606 16.2321988,35.0543931 17.9666667,38.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M8.98333333,34.8333333 C7.74628861,30.6722254 7.18912082,26.3386981 7.33333333,22 L7.33333333,20.1666667 C7.31902598,14.919635 10.1088249,10.0646713 14.649329,7.43496261 C19.1898332,4.80525395 24.789265,4.80145492 29.3333333,7.425" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+  </g>
+</svg>

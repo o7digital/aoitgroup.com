@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/messages_circle</title>
+  <g id="icon_line/messages_circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5.5,36.6666667 L7.88333333,29.5166667 C3.62288193,23.2155178 5.26877319,15.0841301 11.7329072,10.49817 C18.1970412,5.91220998 27.4820846,6.28867958 33.4496883,11.3786945 C39.4172919,16.4687094 40.223544,24.6995212 35.3354306,30.6297342 C30.4473172,36.5599471 21.3752018,38.3572024 14.1166667,34.8333333 L5.5,36.6666667" id="Path" stroke="#008EE9" stroke-width="2"></path>
+    <line x1="22" y1="22" x2="22" y2="22.0183333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    <line x1="14.6666667" y1="22" x2="14.6666667" y2="22.0183333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    <line x1="29.3333333" y1="22" x2="29.3333333" y2="22.0183333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+  </g>
+</svg>

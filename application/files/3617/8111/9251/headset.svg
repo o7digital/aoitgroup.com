@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/headset</title>
+  <g id="icon_line/headset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <rect id="Rectangle" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="7.33333333" y="23.8333333" width="7.33333333" height="11" rx="3.66666667"></rect>
+      <rect id="Rectangle" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="29.3333333" y="23.8333333" width="7.33333333" height="11" rx="3.66666667"></rect>
+      <path d="M7.33333333,27.5 L7.33333333,22 C7.33333333,13.8998237 13.8998237,7.33333333 22,7.33333333 C30.1001763,7.33333333 36.6666667,13.8998237 36.6666667,22 L36.6666667,27.5" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M33,34.8333333 C33,37.8708995 28.0751322,40.3333333 22,40.3333333" id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
+  </g>
+</svg>

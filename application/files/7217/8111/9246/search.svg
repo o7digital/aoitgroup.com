@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/search</title>
+  <g id="icon_line/search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="18.3333333" cy="18.3333333" r="12.8333333"></circle>
+    <line x1="38.5" y1="38.5" x2="27.5" y2="27.5" id="Path" stroke="#008EE9" stroke-width="2"></line>
+  </g>
+</svg>

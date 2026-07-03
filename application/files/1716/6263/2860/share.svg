@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_line/share</title>
+    <g id="icon_line/share" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="11" cy="22" r="5.5"></circle>
+        <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="33" cy="11" r="5.5"></circle>
+        <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="33" cy="33" r="5.5"></circle>
+        <line x1="15.95" y1="19.6166667" x2="28.05" y2="13.3833333" id="Path" stroke="#008EE9" stroke-width="2"></line>
+        <line x1="15.95" y1="24.3833333" x2="28.05" y2="30.6166667" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    </g>
+</svg>
