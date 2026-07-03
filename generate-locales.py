@@ -1,7 +1,23 @@
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).parent
 SOURCE = (ROOT / "index.html").read_text(encoding="utf-8")
+# Regeneration is idempotent even when the root page already contains a
+# previously generated switcher.
+SOURCE = re.sub(
+    r'<!-- language-switcher:start -->.*?<!-- language-switcher:end -->\s*',
+    '',
+    SOURCE,
+    flags=re.S,
+)
+SOURCE = re.sub(
+    r'<nav class="demo-language-switcher".*?</style>\s*',
+    '',
+    SOURCE,
+    count=1,
+    flags=re.S,
+)
 BASE_URL = "https://demo.aoitgroup.com"
 
 LANGUAGES = {
@@ -88,16 +104,33 @@ def seo_head(code: str) -> str:
 
 def switcher(active: str) -> str:
     links = "".join(
-        f'<a href="/{code}/" lang="{code}" hreflang="{code}" '
-        f'aria-current="{"page" if code == active else "false"}">{code.upper()}</a>'
-        for code in LANGUAGES
+        f'<a role="menuitem" href="/{code}/" lang="{code}" hreflang="{code}">'
+        f'<span>{code.upper()}</span><small>{config["name"]}</small></a>'
+        for code, config in LANGUAGES.items() if code != active
     )
-    return f'''<nav class="demo-language-switcher" aria-label="Language selector">{links}</nav>
+    return f'''<!-- language-switcher:start -->
+<div class="demo-language-switcher">
+  <details>
+    <summary aria-label="Select language"><span>{active.upper()}</span><i aria-hidden="true"></i></summary>
+    <nav role="menu" aria-label="Language selector">{links}</nav>
+  </details>
+</div>
 <style>
-.demo-language-switcher{{position:fixed;right:16px;bottom:16px;z-index:99999;display:flex;gap:4px;padding:6px;background:#151b2d;border:1px solid #2b3857;border-radius:7px;box-shadow:0 8px 30px #0005}}
-.demo-language-switcher a{{padding:7px 9px;color:#fff;text-decoration:none;font:700 12px/1 Arial,sans-serif;border-radius:4px}}
-.demo-language-switcher a:hover,.demo-language-switcher a[aria-current="page"]{{background:#009fe3}}
-</style>'''
+.demo-language-switcher{{position:absolute;top:65px;left:175px;z-index:99999;color:#fff;font-family:Arial,sans-serif}}
+.demo-language-switcher details{{position:relative}}
+.demo-language-switcher summary{{display:flex;align-items:center;gap:8px;min-width:52px;padding:6px 9px;cursor:pointer;list-style:none;font-size:12px;font-weight:700;letter-spacing:.08em;transition:color .2s ease}}
+.demo-language-switcher summary::-webkit-details-marker{{display:none}}
+.demo-language-switcher summary:hover{{color:#00a4ed}}
+.demo-language-switcher summary i{{width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s ease}}
+.demo-language-switcher details[open] summary i{{transform:translateY(2px) rotate(225deg)}}
+.demo-language-switcher nav{{position:absolute;top:100%;left:0;min-width:148px;padding:7px 0;background:#171d30;border-top:2px solid #00a4ed;box-shadow:0 12px 28px #0007}}
+.demo-language-switcher a{{display:flex;align-items:center;gap:12px;padding:10px 14px;color:#fff;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.06em;white-space:nowrap}}
+.demo-language-switcher a span{{width:22px;color:#00a4ed}}
+.demo-language-switcher a small{{font-size:11px;font-weight:400;letter-spacing:0;color:#c9cede}}
+.demo-language-switcher a:hover{{background:#222b43}}
+@media(max-width:700px){{.demo-language-switcher{{position:fixed;top:12px;right:12px}}.demo-language-switcher summary{{background:#171d30;border-radius:3px}}.demo-language-switcher nav{{left:auto;right:0}}}}
+</style>
+<!-- language-switcher:end -->'''
 
 
 for code, config in LANGUAGES.items():
