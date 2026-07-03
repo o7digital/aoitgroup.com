@@ -33,6 +33,12 @@ PATH_ALIASES = {
 }
 CACHE_FILE = ROOT / f".translation-cache-{(sys.argv[1] if len(sys.argv) > 1 else 'all')}.json"
 CACHE = json.loads(CACHE_FILE.read_text()) if CACHE_FILE.exists() else {}
+_template_soup = BeautifulSoup((ROOT / "index.html").read_text(encoding="utf-8"), "lxml")
+SWITCHER_TEMPLATE = _template_soup.select_one(".demo-language-switcher")
+SWITCHER_STYLE = next(
+    (style for style in _template_soup.find_all("style") if ".demo-language-switcher" in style.get_text()),
+    None,
+)
 
 
 def source_pages():
@@ -121,7 +127,14 @@ def localize_links(soup, lang):
 
 def language_switcher(soup, lang):
     old = soup.select_one(".demo-language-switcher")
-    if not old: return
+    if not old:
+        if not SWITCHER_TEMPLATE or not soup.body:
+            return
+        fragment = BeautifulSoup(str(SWITCHER_TEMPLATE), "lxml").select_one(".demo-language-switcher")
+        soup.body.append(fragment)
+        old = soup.select_one(".demo-language-switcher")
+        if SWITCHER_STYLE and not any(".demo-language-switcher" in s.get_text() for s in soup.find_all("style")):
+            soup.body.append(BeautifulSoup(str(SWITCHER_STYLE), "lxml").style)
     old.select_one("summary span").string = lang.upper()
     nav = old.select_one("nav")
     nav.clear()
