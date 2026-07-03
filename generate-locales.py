@@ -121,4 +121,11 @@ for code, config in LANGUAGES.items():
     output.parent.mkdir(exist_ok=True)
     output.write_text(html, encoding="utf-8")
 
+# The deployed root is the English entry point, so visitors see the language
+# selector immediately without first knowing the /en/ URL.
+(ROOT / "index.html").write_text(
+    (ROOT / "en" / "index.html").read_text(encoding="utf-8"),
+    encoding="utf-8",
+)
+
 print("Generated: " + ", ".join(f"/{code}/" for code in LANGUAGES))
