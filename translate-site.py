@@ -125,7 +125,7 @@ def localize_links(soup, lang):
         anchor["href"] = href
 
 
-def language_switcher(soup, lang):
+def language_switcher(soup, lang, rel):
     old = soup.select_one(".demo-language-switcher")
     if not old:
         if not SWITCHER_TEMPLATE or not soup.body:
@@ -138,9 +138,11 @@ def language_switcher(soup, lang):
     old.select_one("summary span").string = lang.upper()
     nav = old.select_one("nav")
     nav.clear()
+    slug = "" if rel.as_posix() == "index.html" else rel.with_suffix("").as_posix()
     for code, name in LANGS.items():
         if code == lang: continue
-        a = soup.new_tag("a", href=f"/{code}/", role="menuitem", lang=code, hreflang=code)
+        target = f"/{code}/" + slug
+        a = soup.new_tag("a", href=target, role="menuitem", lang=code, hreflang=code)
         span = soup.new_tag("span"); span.string = code.upper(); a.append(span)
         small = soup.new_tag("small"); small.string = name; a.append(small)
         nav.append(a)
@@ -174,7 +176,7 @@ for lang in targets:
             tag[attr] = text if lang == "en" else CACHE.get(f"{lang}\0{text}", text)
         add_seo(soup, lang, rel)
         localize_links(soup, lang)
-        language_switcher(soup, lang)
+        language_switcher(soup, lang, rel)
         target = ROOT / lang / rel
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(str(soup), encoding="utf-8")
