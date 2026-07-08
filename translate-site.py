@@ -40,6 +40,130 @@ SWITCHER_STYLE = next(
     None,
 )
 
+# Google Translate is useful for the long-form first pass, but it must not be
+# allowed to translate brand names or compose UI fragments independently.  Keep
+# this editorial layer deterministic so a full regeneration cannot reintroduce
+# the same mistakes.
+EXACT_TRANSLATIONS = {
+    "fr": {
+        "A&O IT Group": "A&O IT Group",
+        "A&O IT Group | Global IT Support Services & Cyber Security": "A&O IT Group | Services informatiques globaux et cybersécurité",
+        "Global IT Services": "Services informatiques globaux",
+        "Global IT Services & support": "Services informatiques globaux et assistance",
+        "IT Services <span>global</span>": "Services informatiques <span>globaux</span>",
+        "Supporting businesses in over 130 countries.": "Au service des entreprises dans plus de 130 pays.",
+        "Contact the Team": "Contacter notre équipe",
+        "IT Managed Services": "Services informatiques gérés",
+        "IT Project Services": "Services de projets informatiques",
+        "Global IT Engineering Services": "Services globaux d’ingénierie informatique",
+        "Cyber Security Solutions": "Solutions de cybersécurité",
+        "Cyber Assurance": "Évaluation et assurance cybersécurité",
+        "Cyber Operations": "Opérations de cybersécurité",
+        "Red Teaming": "Red Teaming",
+        "One Solution": "One Solution",
+        "FieldView": "FieldView",
+        "TrainView": "TrainView",
+        "LinkedIn": "LinkedIn",
+        "A&O Corsaire designs autonomous systems that think, decide and execute. Let's set yours up.": "A&O Corsaire conçoit des systèmes autonomes capables de réfléchir, de décider et d’agir. Construisons le vôtre.",
+    },
+    "es": {
+        "A&O IT Group": "A&O IT Group",
+        "A&O IT Group | Global IT Support Services & Cyber Security": "A&O IT Group | Servicios informáticos globales y ciberseguridad",
+        "Global IT Services": "Servicios informáticos globales",
+        "Global IT Services & support": "Servicios informáticos globales y soporte",
+        "IT Services <span>global</span>": "Servicios informáticos <span>globales</span>",
+        "Supporting businesses in over 130 countries.": "Ayudamos a empresas en más de 130 países.",
+        "Contact the Team": "Contactar con el equipo",
+        "IT Managed Services": "Servicios informáticos gestionados",
+        "IT Project Services": "Servicios de proyectos informáticos",
+        "Global IT Engineering Services": "Servicios globales de ingeniería informática",
+        "Cyber Security Solutions": "Soluciones de ciberseguridad",
+        "Cyber Assurance": "Evaluación y garantía de ciberseguridad",
+        "Cyber Operations": "Operaciones de ciberseguridad",
+        "Red Teaming": "Red Teaming",
+        "One Solution": "One Solution",
+        "FieldView": "FieldView",
+        "TrainView": "TrainView",
+        "LinkedIn": "LinkedIn",
+    },
+    "de": {
+        "A&O IT Group": "A&O IT Group",
+        "A&O IT Group | Global IT Support Services & Cyber Security": "A&O IT Group | Globale IT-Services und Cybersicherheit",
+        "Global IT Services": "Globale IT-Services",
+        "Global IT Services & support": "Globale IT-Services und Support",
+        "IT Services <span>global</span>": "<span>Globale</span> IT-Services",
+        "Supporting businesses in over 130 countries.": "Wir unterstützen Unternehmen in über 130 Ländern.",
+        "Contact the Team": "Team kontaktieren",
+        "IT Managed Services": "Managed IT Services",
+        "IT Project Services": "IT-Projektservices",
+        "Global IT Engineering Services": "Globale IT-Engineering-Services",
+        "Cyber Security Solutions": "Cybersicherheitslösungen",
+        "Cyber Assurance": "Cyber Security Assurance",
+        "Cyber Operations": "Cyber Security Operations",
+        "Red Teaming": "Red Teaming",
+        "One Solution": "One Solution",
+        "FieldView": "FieldView",
+        "TrainView": "TrainView",
+        "LinkedIn": "LinkedIn",
+    },
+    "it": {
+        "A&O IT Group": "A&O IT Group",
+        "A&O IT Group | Global IT Support Services & Cyber Security": "A&O IT Group | Servizi IT globali e sicurezza informatica",
+        "Global IT Services": "Servizi IT globali",
+        "Global IT Services & support": "Servizi IT globali e assistenza",
+        "IT Services <span>global</span>": "Servizi IT <span>globali</span>",
+        "Supporting businesses in over 130 countries.": "Supportiamo le aziende in oltre 130 Paesi.",
+        "Contact the Team": "Contatta il team",
+        "IT Managed Services": "Servizi IT gestiti",
+        "IT Project Services": "Servizi per progetti IT",
+        "Global IT Engineering Services": "Servizi globali di ingegneria IT",
+        "Cyber Security Solutions": "Soluzioni di sicurezza informatica",
+        "Cyber Assurance": "Valutazione e garanzia della sicurezza informatica",
+        "Cyber Operations": "Operazioni di sicurezza informatica",
+        "Red Teaming": "Red Teaming",
+        "One Solution": "One Solution",
+        "FieldView": "FieldView",
+        "TrainView": "TrainView",
+        "LinkedIn": "LinkedIn",
+    },
+}
+
+BRAND_VARIANTS = {
+    "fr": ("Groupe informatique A&O", "Groupe IT A&O", "A&O Groupe informatique"),
+    "es": ("Grupo A&O TI", "Grupo TI A&O", "Grupo de TI A&O", "Grupo de A&O TI"),
+    "de": ("A&O IT-Gruppe", "A&O-Gruppe IT"),
+    "it": ("Gruppo IT A&O", "Gruppo A&O IT", "gruppo IT A&O", "gruppo A&O IT"),
+}
+
+TERM_VARIANTS = {
+    "fr": {"Équipe Rouge": "Red Teaming", "Équipe rouge": "Red Teaming", "Lié à": "LinkedIn"},
+    "es": {"Equipo rojo": "Red Teaming", "equipo rojo": "Red Teaming"},
+    "de": {"Rotes Teaming": "Red Teaming", "rotes Teaming": "Red Teaming"},
+    "it": {"Squadra Rossa": "Red Teaming", "squadra rossa": "Red Teaming", "Visualizzazione campo": "FieldView"},
+}
+
+
+def polish_translation(source, translated, lang):
+    translated = EXACT_TRANSLATIONS.get(lang, {}).get(source, translated)
+    translated = translated.replace("\u200b", "")
+    for variant in BRAND_VARIANTS.get(lang, ()):
+        translated = translated.replace(variant, "A&O IT Group")
+    for variant, preferred in TERM_VARIANTS.get(lang, {}).items():
+        translated = translated.replace(variant, preferred)
+    return translated
+
+
+def polish_composed_content(soup, lang):
+    """Fix phrases whose grammar crosses inline HTML element boundaries."""
+    heading = soup.select_one("h1.hero__heading")
+    if heading and lang in EXACT_TRANSLATIONS:
+        fragment = BeautifulSoup(
+            EXACT_TRANSLATIONS[lang]["IT Services <span>global</span>"], "lxml"
+        ).body
+        heading.clear()
+        for child in list(fragment.contents):
+            heading.append(child)
+
 
 def source_pages():
     pages = []
@@ -170,16 +294,21 @@ for lang in targets:
         if lang != "en": translate_batches(strings, lang)
         for node, text in nodes:
             translated = text if lang == "en" else CACHE.get(f"{lang}\0{text}", text)
+            translated = polish_translation(text, translated, lang)
             original = str(node); lead = original[:len(original)-len(original.lstrip())]; trail = original[len(original.rstrip()):]
             node.replace_with(lead + translated + trail)
         for tag, attr, text in attrs:
-            tag[attr] = text if lang == "en" else CACHE.get(f"{lang}\0{text}", text)
+            translated = text if lang == "en" else CACHE.get(f"{lang}\0{text}", text)
+            tag[attr] = polish_translation(text, translated, lang)
+        polish_composed_content(soup, lang)
         add_seo(soup, lang, rel)
         localize_links(soup, lang)
         language_switcher(soup, lang, rel)
         target = ROOT / lang / rel
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(str(soup), encoding="utf-8")
+        # U+200B occasionally arrives from copied CMS list markup. It has no
+        # semantic value here and creates inconsistent search/indexing text.
+        target.write_text(str(soup).replace("\u200b", ""), encoding="utf-8")
         if page_no % 25 == 0: print(f"{lang}: {page_no}/{len(pages)}")
 print("Translation complete")
 
