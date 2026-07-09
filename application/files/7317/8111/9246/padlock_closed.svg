@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/padlock_closed</title>
+  <g id="icon_line/padlock_closed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="Rectangle" stroke="#008EE9" stroke-width="2" x="9.16666667" y="20.1666667" width="25.6666667" height="18.3333333" rx="3.66666667"></rect>
+    <circle id="Oval" stroke="#008EE9" stroke-width="2" cx="22" cy="29.3333333" r="1.83333333"></circle>
+    <path d="M14.6666667,20.1666667 L14.6666667,12.8333333 C14.6666667,8.78324517 17.9499118,5.5 22,5.5 C26.0500882,5.5 29.3333333,8.78324517 29.3333333,12.8333333 L29.3333333,20.1666667" id="Path" stroke="#008EE9" stroke-width="2"></path>
+  </g>
+</svg>

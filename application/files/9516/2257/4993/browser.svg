@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_line/browser</title>
+    <g id="icon_line/browser" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect id="Rectangle" stroke="#008EE9" stroke-width="2" x="7.33333333" y="7.33333333" width="29.3333333" height="29.3333333" rx="1.83333333"></rect>
+        <line x1="7.33333333" y1="14.6666667" x2="36.6666667" y2="14.6666667" id="Path" stroke="#008EE9" stroke-width="2"></line>
+        <line x1="14.6666667" y1="7.33333333" x2="14.6666667" y2="14.6666667" id="Path" stroke="#008EE9" stroke-width="2"></line>
+    </g>
+</svg>

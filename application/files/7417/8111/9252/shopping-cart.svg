@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44px" height="44px" viewBox="0 0 44 44" version="1.1">
+  <title>icon_line/shopping-cart</title>
+  <g id="icon_line/shopping-cart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Group">
+      <polygon id="Path" points="0 0 44 0 44 44 0 44"></polygon>
+      <circle id="Oval" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="11" cy="34.8333333" r="3.66666667"></circle>
+      <circle id="Oval" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" cx="31.1666667" cy="34.8333333" r="3.66666667"></circle>
+      <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="31.1666667 31.1666667 11 31.1666667 11 5.5 7.33333333 5.5"></polyline>
+      <polyline id="Path" stroke="#008EE9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="11 9.16666667 36.6666667 11 34.8333333 23.8333333 11 23.8333333"></polyline>
+    </g>
+  </g>
+</svg>
